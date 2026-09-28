@@ -7,7 +7,7 @@ SELECT
     MIN(salary) as min_salary,
     SUM(salary) as total_salary
 FROM training.employee
-GROUP BY city;
+GROUP BY city, employee_count;
 
 -- Having Clause
 SELECT city, AVG(salary) as avg_salary
